@@ -1,0 +1,17 @@
+app = "truckfest-bot"
+primary_region = "lhr"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[processes]
+  app = "python bot.py"
+
+[[restart]]
+  policy = "always"
+  processes = ["app"]
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory = "256mb"
