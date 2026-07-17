@@ -1,5 +1,5 @@
 app = "truckfest-bot"
-primary_region = "lhr"
+primary_region = "ams"
 
 [build]
   dockerfile = "Dockerfile"
